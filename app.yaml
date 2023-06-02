@@ -1,0 +1,10 @@
+workers:
+- dockerfile_path: Dockerfile
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: DO-Solutions/Docker-cron
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  name: Docker-cron
+  source_dir: /
